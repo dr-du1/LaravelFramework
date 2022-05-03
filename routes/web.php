@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::view('/', 'main')->name('Home');
+Route::view('/second', 'second')->name('News');
+Route::view('/third', 'third')->name('Authorization');
+Route::view('/fourth', 'fourth')->name('Personal Area');
 //1
 Route::get('/my-name', function () {
     return ('Ярков Юрий Александрович');
